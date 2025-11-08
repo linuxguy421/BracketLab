@@ -1,0 +1,50 @@
+# ----------------------------------------------------------------------
+# 🏆 BracketLab - .gitignore
+# ----------------------------------------------------------------------
+
+# 1. Virtual Environment & Dependencies
+# Python standard: Virtual environments and dependency management artifacts
+venv/
+.env
+pip-log.txt
+pip-wheel-metadata/
+
+# 2. Python Compiled Files & Caches
+# Compiled Python bytecode
+*.pyc
+*~$
+__pycache__/
+
+# 3. Development/Testing Artifacts
+# Pytest and coverage reports
+.pytest_cache/
+htmlcov/
+.coverage
+
+# 4. Logs & Runtime Data (CRITICAL for BracketLab)
+# The application generates these directories/files at runtime.
+logs/
+data/
+*.log
+*.sqlite
+*.db
+
+# 5. IDE and OS Files (Cross-Platform)
+# MacOS
+.DS_Store
+# Visual Studio Code
+.vscode/
+# PyCharm/IntelliJ
+.idea/
+
+# 6. Build/Distribution
+# Artifacts created during packaging (Phases 5/6)
+dist/
+build/
+*.egg-info/
+
+# 7. Infrastructure/Containerization (Phases 6)
+# Terraform state and cache files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
